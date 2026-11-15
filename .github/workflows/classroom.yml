@@ -21,7 +21,7 @@ jobs:
     - name: Install Dependencies
       run: |
           pip install pandas numpy matplotlib spacy spacytextblob requests
-    python -m spacy download en_core_web_sm
+          python -m spacy download en_core_web_sm
     - name: Test Sentences
       id: test-sentences
       uses: classroom-resources/autograding-command-grader@v1
